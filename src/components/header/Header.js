@@ -7,7 +7,6 @@ import {
   greeting,
   workExperiences,
   skillsSection,
-  openSource,
   blogSection,
   achievementSection,
   resumeSection

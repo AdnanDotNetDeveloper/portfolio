@@ -34,7 +34,7 @@ const greeting = {
 
 const socialMediaLinks = {
   github: "https://github.com/AdnanDotNetDeveloper",
-  linkedin: "www.linkedin.com/in/adnan-jameel-78410a355",
+  linkedin: "https://www.linkedin.com/in/adnan-jameel-78410a355",
   gmail: "adnanarain1101@gmail.com",
   facebook: "https://web.facebook.com/adnanarain.adnanarain.1/",
   // Instagram, Twitter and Kaggle are also supported in the links!
@@ -170,29 +170,22 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Senior Software Developer",
+      company: "FA Professional",
+      companylogo: require("./assets/images/fa.jpg"),
+      date: "January 2022 – Present",
+      desc: "Working as a full-stack developer on various client projects, specializing in React.js, Next.js, Angular, Node.js and C# .NET Core development.",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Designed and implemented responsive web applications and enterprise solutions",
+        "Collaborated with cross-functional teams to deliver high-quality software on time"
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Freelance Developer",
+      company: "Fiverr & Upwork",
+      companylogo: require("./assets/images/upwork.png"),
+      date: "January 2021 – Present",
+      desc: "Providing freelance development services to international clients, focusing on web application development, custom programming solutions, and technical consultations."
     }
   ]
 };
