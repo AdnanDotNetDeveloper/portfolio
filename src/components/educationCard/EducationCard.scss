@@ -84,12 +84,15 @@
   .education-card {
     flex-direction: column;
     padding-bottom: 10px;
+    align-items: center;
+    text-align: center;
   }
   .education-card-right {
     max-width: 90%;
   }
   .education-card-border {
     width: 90%;
+    margin: 0 auto 20px auto;
   }
   .education-text-subHeader {
     padding-top: 0.5rem;
@@ -113,12 +116,17 @@
 @media (max-width: 768px) {
   .education-card {
     text-align: center;
+    align-items: center;
   }
   .education-card-right {
     max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .education-card-border {
     width: 100%;
+    margin: 0 auto 20px auto;
   }
   .education-roundedimg {
     margin-top: 10px;
@@ -129,6 +137,7 @@
   }
   .education-text-bullets > ul {
     max-width: 80%;
-    margin: auto;
+    margin: 0 auto;
+    padding-left: 20px;
   }
 }
