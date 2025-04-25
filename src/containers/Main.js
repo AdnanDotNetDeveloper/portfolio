@@ -20,6 +20,7 @@ import {splashScreen} from "../portfolio";
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
+import AnimatedBackground from "../components/animatedBackground/AnimatedBackground";
 
 const Main = () => {
   const darkPref = window.matchMedia("(prefers-color-scheme: dark)");
@@ -49,7 +50,7 @@ const Main = () => {
         {isShowingSplashAnimation && splashScreen.enabled ? (
           <SplashScreen />
         ) : (
-          <>
+          <AnimatedBackground>
             <Header />
             <Greeting />
             <Skills />
@@ -66,7 +67,7 @@ const Main = () => {
             <Profile />
             <Footer />
             <ScrollToTopButton />
-          </>
+          </AnimatedBackground>
         )}
       </StyleProvider>
     </div>

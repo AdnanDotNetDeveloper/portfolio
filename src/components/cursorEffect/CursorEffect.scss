@@ -1,0 +1,45 @@
+@import "../../_globalColor";
+
+.cursor, .cursor-trail {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 9999;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  transition: width 0.2s, height 0.2s, background-color 0.2s;
+}
+
+.cursor {
+  width: 12px;
+  height: 12px;
+  background-color: $buttonColor;
+  mix-blend-mode: exclusion;
+}
+
+.cursor-trail {
+  width: 24px;
+  height: 24px;
+  background-color: rgba(142, 45, 226, 0.3);
+  transition: transform 0.2s ease-out, width 0.3s, height 0.3s, background-color 0.3s;
+}
+
+.cursor-hover {
+  width: 24px;
+  height: 24px;
+  background-color: $buttonHover;
+}
+
+.cursor-trail-hover {
+  width: 42px;
+  height: 42px;
+  background-color: rgba(142, 45, 226, 0.1);
+}
+
+@media (max-width: 768px) {
+  .cursor, .cursor-trail {
+    display: none;
+  }
+} 

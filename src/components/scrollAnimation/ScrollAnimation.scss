@@ -1,0 +1,25 @@
+@import "../../_globalColor";
+
+.scroll-animation {
+  will-change: transform, opacity;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+  
+  &:hover {
+    z-index: 1;
+  }
+}
+
+// Add custom animation for staggered children
+.stagger-container {
+  .stagger-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    
+    &.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+} 
