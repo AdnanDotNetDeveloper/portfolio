@@ -7,6 +7,7 @@
   -moz-border-radius: 25px;
   -webkit-border-radius: 25px;
   border-radius: 25px;
+  margin-bottom: 1rem;
 }
 .meter > span {
   display: block;
@@ -18,9 +19,15 @@
   background-color: $progressBarSpanBG;
   position: relative;
   overflow: hidden;
+  transition: width 1.5s ease-in-out;
 }
 .skill {
   line-height: 3.5vw;
+  margin-bottom: 0.5rem;
+}
+.skill p {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 .skill-bars {
   font-size: 28px;
@@ -36,6 +43,9 @@
 .skills-container > * {
   flex: 1;
   margin-bottom: 30px;
+}
+.skills-bar {
+  width: 100%;
 }
 .skills-image > img {
   margin-left: 80px;
